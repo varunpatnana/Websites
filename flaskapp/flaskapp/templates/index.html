@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="assets/js/data.js"></script>
+</head>
+<body>
+    <!-- === HEADER === -->
+    <header class="l-header">
+        <nav class="nav bg-grid">
+            <div>
+                <H3>
+                <a href="#" class="nav-logo" style="color: black !important;">BULLS FASHION</a>
+                </H3>
+            </div>
+            <div class="nav-menu" id="nav-menu" >
+                <ul class="nav-list" >
+                    <li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="/products" class="nav-link" style="color: black !important;">Products</a></li>
+                    <li class="nav-item"><a href="/chart" class="nav-link" style="color: black !important;">Chart</a></li>
+                    <li class="nav-item"><a href="/aboutus" class="nav-link active"  style="color: black !important;">About Us</a></li>
+                    <!-- <li class="nav-item"><a href="#subscribed" class="nav-link" style="color: black !important;">Contact US</a></li> -->
+                    
+                </ul>
+            </div>
+            <div>
+                <a href="/cart" class="nav-link" style="color: black !important;">
+                    <i class="fas fa-shopping-cart nav-cart"></i>
+                    <i class="fas fa-th-list nav-toggle" id="nav-toggle"></i>
+                    <small id="productId">0</small>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- === MAIN PAGE === -->
+    <main class="l-main">
+        <!-- === HOME === -->
+        <section id="home" class="home">
+            <div class="home-container bg-grid">
+                <div class="home-data">
+                    <h1 class="home-title">NEW <br><span>ARRIVALS</span></h1>
+                    <a href="/products" class="btn">Go SHOPPING</a>
+                </div>
+                <img src="./assets/images/home.png" alt="homepage" class="home-img">
+            </div>
+        </section>
+        <!-- === collection === -->
+        <section class="collection section">
+            <div class="collection-container bg-grid">
+                <div class="collection-box">
+                    <img src="./assets/images/backpackMan.png" alt="packpackman" class="collection-img">
+                    <div class="collection-data">
+                        <h2 class="collection-title"><span class="subtitle">Men</span><br> Backpack</h2>
+                        <a href="/products" class="view-collection">View Collection</a>
+                    </div>
+                </div>
+                <div class="collection-box">
+                    <div class="collection-data">
+                        <h2 class="collection-title"><span class="subtitle">Women</span><br> Backpack</h2>
+                        <a href="/products" class="view-collection">View Collection</a>
+                    </div>
+                    <img src="./assets/images/backpackWoman.png" alt="packpackman" class="collection-img">
+                </div>
+            </div>
+        </section>
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+        </button>
+         -->
+        <!-- Modal -->
+        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div> -->
+        <section class="offer section">
+            <div class="offer-bg">
+                <div class="offer-data">
+                    <h2 class="offer-title">special offers</h2>
+                    <p class="offer-decripition">special offers discounte for Women this week only.</p>
+                    <a href="#" class="btn">SHOP NOW</a>
+                </div>
+            </div>
+        </section>
+        <!-- === NEW === -->
+
+        <section class="section new" id="new">
+            <h2 class="section-title">NEW ARRIVALS</h2>
+            <a href="#new" class="section-all">view all</a>
+            <div class="new-container bg-grid"> 
+                <div class="new-box">
+                    <img src="./assets/images/new1.png" alt="new" class="new-img">
+                    <div class="new-link">
+                        <a href="#" class="btn">VIEW PRODUCT</a>
+                    </div>
+                </div>
+                <div class="new-box">
+                    <img src="./assets/images/new2.png" alt="new" class="new-img">
+                    <div class="new-link">
+                        <a href="#" class="btn">VIEW PRODUCT</a>
+                    </div>
+                </div>
+                <div class="new-box">
+                    <img src="./assets/images/new3.png" alt="new" class="new-img">
+                    <div class="new-link">
+                        <a href="#" class="btn">VIEW PRODUCT</a>
+                    </div>
+                </div>
+                <div class="new-box">
+                    <img src="./assets/images/new4.png" alt="new" class="new-img">
+                    <div class="new-link">
+                        <a href="#" class="btn">VIEW PRODUCT</a>
+                    </div>
+                </div>
+                <div class="new-box">
+                    <img src="./assets/images/new5.png" alt="new" class="new-img">
+                    <div class="new-link">
+                        <a href="#" class="btn">VIEW PRODUCT</a>
+                    </div>
+                </div>
+                <div class="new-box">
+                    <img src="./assets/images/new6.png" alt="new" class="new-img">
+                    <div class="new-link">
+                        <a href="#" class="btn">VIEW PRODUCT</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- === NEWLETTER === -->
+        <!-- <section class="section newsletter" id="subscribed">
+            <div class="newsletter-container bg-grid">
+                <div class="newsletter-subscribe">
+                    <h2 class="section-title">OUR NEWLETTER</h2>
+                    <p class="newsletter-decs">pormotion new products and sales. Directly to you</p>
+                    <form action="" class="newsletter-form">
+                        <input type="text" class="newsletter-input" placeholder="Enter Your Email">
+                        <a href="#" class="btn">SUBSCRIBE</a>
+                    </form>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="section newsletter" id="subscribed">
+            <div class="newsletter-container bg-grid">
+                <div class="newsletter-subscribe">
+                    <h2 class="section-title">OUR NEWS LETTER</h2>
+                    <p class="newsletter-decs">pormotion new products and sales. Directly to you</p>
+                    <form action="" class="newsletter-form">
+                        <input type="text" class="newsletter-input" placeholder="Enter Your Email">
+                        <a href="/" onclick="subscribe()" class="btn">SUBSCRIBE</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- === SPONSORS === -->
+        <section class="section sponsors">
+            <div class="sponsors-container bg-grid">
+                <div class="sponsors-logo">
+                    <img src="./assets/images/logo1.png" alt="sponsors">
+                </div>
+                <div class="sponsors-logo">
+                    <img src="./assets/images/logo2.png" alt="sponsors">
+                </div>
+                <div class="sponsors-logo">
+                    <img src="./assets/images/logo3.png" alt="sponsors">
+                </div>
+                <div class="sponsors-logo">
+                    <img src="./assets/images/logo4.png" alt="sponsors">
+                </div>
+            </div>
+        </section>
+        <!-- === FOOTER === -->
+        <section class="section footer">
+            <div class="footer-container bg-grid">
+                <div class="footer-box">
+                        <h3 class="footer-title">Demo Website</h3>
+                        <p class="footer-decs">products store</p>
+                        <a href="#" class="footer-store"><img src="./assets/images/footerstore1.png" alt="store"></a>
+                        <a href="#" class="footer-store"><img src="./assets/images/footerstore2.png" alt="store"></a>
+                    
+                </div>
+                <div class="footer-box">
+                    <h3 class="footer-title">Explore</h3>
+                    <ul>
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#featured" class="footer-link">Featured</a></li>
+                        <li><a href="#new" class="footer-link">New</a></li>
+                        <li><a href="#subscribe" class="footer-link">Subscribe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h3 class="footer-title">Our Services</h3>
+                    <ul>
+                        <li><a href="#home" class="footer-link">pricing</a></li>
+                        <li><a href="#featured" class="footer-link">free shipping</a></li>
+                        <li><a href="#new" class="footer-link">gift card</a></li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h3 class="footer-title">Explore</h3>
+                    <ul class="social-icons">
+                        <li><a href="#" class="footer-link "><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#" class="footer-link"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="#" class="footer-link"><i class="fab fa-twitter-square "></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-copy">&#169; 2020 Copyright all right reserved</p>
+        </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
